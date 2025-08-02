@@ -1,11 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="0; url=home/">
-  <title>Redirecting to Home</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Doc Relay — Coming Soon</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <p>If you are not redirected, <a href="home/">click here</a>.</p>
+<body class="bg-gray-950 text-white flex items-center justify-center min-h-screen px-4">
+  <div class="max-w-2xl text-center animate-fade-in">
+    <h1 class="text-5xl font-extrabold mb-6 tracking-tight leading-tight">
+      📄 Doc Relay
+    </h1>
+    <p class="text-xl mb-6 text-gray-300">
+      A centralized AI system to streamline your documentation workflow.
+    </p>
+    <h2 class="text-3xl font-semibold text-blue-500 mb-8">
+      🚀 Launching Soon
+    </h2>
+    
+    <form class="flex flex-col sm:flex-row items-center justify-center gap-4">
+      <input 
+        type="email" 
+        placeholder="Enter your email" 
+        class="w-full sm:w-auto px-4 py-2 rounded-lg text-black focus:outline-none" 
+        required
+      />
+      <button 
+        type="submit" 
+        class="bg-blue-600 hover:bg-blue-700 transition px-6 py-2 rounded-lg font-semibold"
+      >
+        Notify Me
+      </button>
+    </form>
+    
+    <p class="text-sm text-gray-500 mt-4">
+      Be the first to experience seamless AI-powered documentation.
+    </p>
+  </div>
+
+  <style>
+    @keyframes fade-in {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fade-in {
+      animation: fade-in 1s ease-out forwards;
+    }
+  </style>
 </body>
 </html>
